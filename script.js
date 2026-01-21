@@ -1,34 +1,175 @@
-// Typing effect
-const text = "Computer Science Engineering Student | AI & ML Enthusiast";
-let index = 0;
-const typing = document.querySelector(".typing");
-
-function type() {
-    if (index < text.length) {
-        typing.textContent += text.charAt(index);
-        index++;
-        setTimeout(type, 70);
-    }
+:root {
+  --bg: #353535;
+  --primary: #3c6e71;
+  --white: #ffffff;
+  --muted: #d9d9d9;
+  --card: #284b63;
 }
-type();
 
-// Scroll animations
-const elements = document.querySelectorAll(
-    ".slide-left, .slide-right, .slide-up, .slide-down"
-);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-window.addEventListener("scroll", () => {
-    elements.forEach(el => {
-        const position = el.getBoundingClientRect().top;
-        if (position < window.innerHeight - 120) {
-            el.classList.add("show");
-        }
-    });
-});
+body {
+  font-family: "Inter", sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.7;
+}
 
-// Initial load
-window.onload = () => {
-    document.querySelectorAll(".slide-down, .slide-up").forEach(el => {
-        el.classList.add("show");
-    });
-};
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+nav a {
+  color: var(--muted);
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--white);
+  border-bottom: 2px solid var(--primary);
+}
+
+/* HERO */
+.hero {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(135deg, var(--card), var(--bg));
+}
+
+.hero-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+  width: 100%;
+  gap: 50px;
+}
+
+.hero-content h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.hero-content h1 span {
+  color: var(--primary);
+}
+
+.hero-content h2 {
+  color: var(--primary);
+}
+
+.hero-content p {
+  color: var(--muted);
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: var(--primary);
+  color: var(--white);
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* IMAGE */
+.hero-image img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid var(--primary);
+}
+
+/* SECTIONS */
+section {
+  padding: 70px 10%;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.section-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  display: block;
+  margin: 10px auto;
+}
+
+/* CARDS */
+.card,
+.cert-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+/* GRIDS */
+.cert-container,
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.skills-grid h3 {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 8px;
+}
+
+.skills-grid p {
+  font-size: 15px;
+  color: var(--muted);
+}
+
+/* TEXT */
+.center-text {
+  text-align: center;
+  color: var(--muted);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #2b2b2b;
+}
+
+
+
