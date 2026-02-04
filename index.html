@@ -3,19 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ram Charan Chirra | AI & ML Engineer</title>
 
-  <title>Ram Charan | AI & ML Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <script defer src="script.js"></script>
 </head>
 
 <body>
+
+<div class="cursor-glow"></div>
 
 <header>
   <div class="logo">Ram Charan</div>
@@ -23,170 +20,157 @@
     <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#experience">Experience</a>
-    <a href="#certifications">Certifications</a>
+    <a href="#projects">Projects</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
+  <button id="themeToggle">🌙</button>
 </header>
 
 <!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-wrapper">
-
-    <div class="hero-content">
-      <h1><span>Ram Charan</span> Chirra</h1>
-      <h2>AI & ML Engineer</h2>
-      <p>Building intelligent solutions using Machine Learning & Data</p>
-
-      <a
-        href="https://docs.google.com/document/d/1GCqD9FG4w2n1Cg4VsniooK_-IAkyqz9x/edit"
-        class="btn"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        📄 Download Resume
-      </a>
-    </div>
-
-    <div class="hero-image">
-      <img
-        src="https://i.ibb.co/3Y9PrcM0/profile.png"
-        alt="Ram Charan Profile Photo"
-      />
-    </div>
-
+<section id="home" class="hero reveal">
+  <div class="hero-text">
+    <h1>Ram Charan Chirra</h1>
+    <h2>AI & ML Engineer | Python Developer</h2>
+    <p>
+      Building intelligent, scalable, and data-driven solutions
+      using AI, Machine Learning, and Python.
+    </p>
+    <a class="btn" target="_blank"
+       href="https://docs.google.com/document/d/1GCqD9FG4w2n1Cg4VsniooK_-IAkyqz9x/edit">
+      Download Resume
+    </a>
   </div>
+
+  <img src="https://i.ibb.co/3Y9PrcM0/profile.png" alt="Profile">
 </section>
 
 <!-- ABOUT -->
-<section id="about">
+<section id="about" class="reveal">
   <h2 class="section-title">About Me</h2>
-  <p class="center-text">
-    I am currently pursuing a Bachelor’s degree in Computer Science & Engineering
-    with a specialization in Artificial Intelligence and Machine Learning.
-    Passionate about AI, Machine Learning, and problem-solving, with hands-on
-    experience through internships and real-world exposure.
+  <p class="center">
+    I am a B.Tech Computer Science & Engineering student specializing in
+    Artificial Intelligence and Machine Learning, with a strong focus on
+    Python development and data-driven problem solving.
+    <br><br>
+    As a Python Developer, I have hands-on experience in building machine
+    learning models, implementing data preprocessing pipelines, and
+    developing intelligent applications using NumPy, Pandas, and
+    Scikit-Learn.
+    <br><br>
+    I am passionate about applying AI, Machine Learning, and Generative AI
+    to real-world problems while writing clean, efficient, and scalable code.
   </p>
 </section>
 
 <!-- EXPERIENCE -->
-<section id="experience">
+<section id="experience" class="reveal">
   <h2 class="section-title">Experience</h2>
 
-  <div class="card">
-    <h3>Plasmid Innovation Limited</h3>
-    <span>Machine Learning Intern</span>
-    <ul>
-      <li>Customer segmentation using K-Means clustering</li>
-      <li>Spam News Detection system with 95% accuracy</li>
-      <li>Received Letter of Recommendation</li>
-    </ul>
-  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>Plasmid Innovation Limited</h3>
+      <span>Machine Learning Intern</span>
+      <ul>
+        <li>Customer segmentation using K-Means</li>
+        <li>Spam news detection with 95% accuracy</li>
+        <li>Received Letter of Recommendation</li>
+      </ul>
+    </div>
 
-  <div class="card">
-    <h3>EduSkills</h3>
-    <span>Virtual Internship – AI & ML</span>
-    <ul>
-      <li>Hands-on AI & ML training</li>
-      <li>Industry-aligned learning modules</li>
-    </ul>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications">
-  <h2 class="section-title">Certifications</h2>
-
-  <div class="cert-container">
-    <div class="cert-card">Microsoft Certified: Azure AI Fundamentals</div>
-    <div class="cert-card">Industrial Internship – Plasmid Innovation</div>
-    <div class="cert-card">EduSkills AI & ML Virtual Internship</div>
-    <div class="cert-card">Gen AI Powered Data Analytics Simulation</div>
+    <div class="card">
+      <h3>EduSkills</h3>
+      <span>AI & ML Virtual Internship</span>
+      <ul>
+        <li>Hands-on AI & ML training</li>
+        <li>Industry-aligned projects</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<!-- SKILLS (WITH INFORMATION) -->
-<section id="skills">
+<!-- PROJECTS -->
+<section id="projects" class="reveal">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Spam News Detection</h3>
+      <p>NLP-based ML model using Python and Scikit-Learn.</p>
+    </div>
+
+    <div class="card">
+      <h3>Customer Segmentation</h3>
+      <p>Behavioral clustering using K-Means.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="reveal">
   <h2 class="section-title">Skills</h2>
 
-  <div class="skills-grid">
-
-    <div>
-      <h3>Programming Languages</h3>
-      <p>
-        Python, SQL<br>
-        Used for algorithm development, data handling, database querying,
-        and implementing AI/ML models efficiently.
-      </p>
+  <div class="skills">
+    <div class="skill">
+      <p>Python</p>
+      <div class="bar"><span data-width="90%"></span></div>
     </div>
 
-    <div>
-      <h3>Data Structures & Algorithms</h3>
-      <p>
-        Arrays, Strings, Linked Lists, Stacks, Queues, Trees, Graphs,
-        Sorting & Searching.<br>
-        Strong foundation in problem-solving and optimized logic building.
-      </p>
+    <div class="skill">
+      <p>Machine Learning</p>
+      <div class="bar"><span data-width="85%"></span></div>
     </div>
 
-    <div>
-      <h3>Artificial Intelligence & Machine Learning</h3>
-      <p>
-        Supervised & Unsupervised Learning, Classification,
-        Clustering, Model Evaluation.<br>
-        Experience working with real-world datasets and ML pipelines.
-      </p>
+    <div class="skill">
+      <p>Data Structures</p>
+      <div class="bar"><span data-width="80%"></span></div>
     </div>
 
-    <div>
-      <h3>Generative AI</h3>
-      <p>
-        Prompt Engineering, Large Language Models (LLMs),
-        Text Generation and AI-driven workflows.<br>
-        Applied GenAI concepts for automation and intelligent insights.
-      </p>
+    <div class="skill">
+      <p>Generative AI</p>
+      <div class="bar"><span data-width="75%"></span></div>
     </div>
-
-    <div>
-      <h3>Libraries & Tools</h3>
-      <p>
-        Scikit-Learn, NLP, Jupyter Notebook.<br>
-        Used for data preprocessing, model training,
-        evaluation, and experimentation.
-      </p>
-    </div>
-
-    <div>
-      <h3>Problem Solving & Soft Skills</h3>
-      <p>
-        Logical Thinking, Algorithmic Reasoning,
-        Communication, Team Collaboration.<br>
-        Able to explain technical concepts clearly and effectively.
-      </p>
-    </div>
-
   </div>
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
+<section id="contact" class="reveal">
   <h2 class="section-title">Contact</h2>
-  <p class="center-text">
-    📍 Warangal<br>
-    📧 chirraramcharan1234@gmail.com<br>
-    📞 9346468380<br><br>
-    <a href="https://www.linkedin.com/in/chirra-ramcharan-119156295/" target="_blank">
-      LinkedIn Profile
-    </a>
-  </p>
+
+  <div class="contact-box">
+    <p>📍 <strong>Location:</strong> Warangal, Telangana</p>
+
+    <p>
+      📧 <strong>Email:</strong>
+      <a href="mailto:chirraramcharan1234@gmail.com">
+        chirraramcharan1234@gmail.com
+      </a>
+    </p>
+
+    <p>
+      📞 <strong>Phone:</strong>
+      <a href="tel:+919346468380">
+        +91 93464 68380
+      </a>
+    </p>
+
+    <p>
+      🔗 <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/chirra-ramcharan-119156295/"
+         target="_blank" rel="noopener noreferrer">
+        linkedin.com/in/chirra-ramcharan
+      </a>
+    </p>
+  </div>
 </section>
 
 <footer>
-  © 2026 Ram Charan Chirra • AI & ML Portfolio
+  © 2026 Ram Charan Chirra
 </footer>
 
 </body>
 </html>
+
 
 
 
